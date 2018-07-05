@@ -1,3 +1,5 @@
+package com.example.android.quakereport;
+
 import android.content.Context;
 
 /** @link Quake is a class that is used for each earthquake that occurs, and includes
