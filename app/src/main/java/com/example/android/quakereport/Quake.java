@@ -24,8 +24,8 @@ import android.content.Context;
     }
 
     //Declare the methods to get each state
-    public Double getMagnitude() {
-        return magnitude;
+    public String getMagnitude() {
+        return magnitude.toString();
     }
 
     public String getCity() {
