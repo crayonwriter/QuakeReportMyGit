@@ -9,30 +9,30 @@ import android.content.Context;
     public class Quake {
 
 //Instantiate the states
-    private Double magnitude;
-    private String city;
-    private String date;
-    private Context context;
+    private String mMagnitude;
+    private String mCity;
+    private String mDate;
+    private Context mCcontext;
 
 
 
     //Constructor for the class
-    public Quake(double magnitude, String city, String date) {
-        magnitude = 0.0;
-        city = "";
-        date = "";
+    public Quake(String magnitude, String city, String date) {
+        mMagnitude = magnitude;
+        mCity = city;
+        mDate = date;
     }
 
     //Declare the methods to get each state
     public String getMagnitude() {
-        return magnitude.toString();
+        return mMagnitude;
     }
 
     public String getCity() {
-        return city;
+        return mCity;
     }
 
     public String getDate() {
-        return date;
+        return mDate;
     }
 }
