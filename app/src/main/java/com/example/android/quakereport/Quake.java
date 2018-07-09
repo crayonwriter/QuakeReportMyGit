@@ -2,6 +2,8 @@ package com.example.android.quakereport;
 
 import android.content.Context;
 
+import java.lang.reflect.Constructor;
+
 /** @link Quake is a class that is used for each earthquake that occurs, and includes
  * the magnitude, the city, and the date of each earthquake.
  */
@@ -11,16 +13,23 @@ import android.content.Context;
 //Instantiate the states
     private String mMagnitude;
     private String mCity;
-    private String mDate;
-    private Context mCcontext;
+    private long mTimeInMilliseconds;
 
 
 
-    //Constructor for the class
-    public Quake(String magnitude, String city, String date) {
+    /**Constructor for the class
+     * @param magnitude is the magnitude (size) of the earthquake
+     * @param city is the city location of the earthquake
+     * @param timeInMilliseconds is the time in milliseconds (from the Epoch) when the
+     *  earthquake happened
+     */
+
+
+    public Quake(String magnitude, String city, long timeInMilliseconds) {
         mMagnitude = magnitude;
         mCity = city;
-        mDate = date;
+        mTimeInMilliseconds = timeInMilliseconds;
+
     }
 
     //Declare the methods to get each state
@@ -32,7 +41,7 @@ import android.content.Context;
         return mCity;
     }
 
-    public String getDate() {
-        return mDate;
+    public long getTimeInMilliseconds() {
+        return mTimeInMilliseconds;
     }
 }
