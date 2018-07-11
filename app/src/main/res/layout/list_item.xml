@@ -14,11 +14,18 @@
         tools:text="4.5" />
 
     <TextView
-        android:id="@+id/City"
+        android:id="@+id/location_offset"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
         tools:text="Detroit"/>
+
+    <TextView
+        android:id="@+id/primary_location"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        tools:text="Near"/>
 
     <TextView
         android:id="@+id/Date"

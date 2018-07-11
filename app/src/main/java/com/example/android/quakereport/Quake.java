@@ -12,22 +12,22 @@ import java.lang.reflect.Constructor;
 
 //Instantiate the states
     private String mMagnitude;
-    private String mCity;
+    private String mLocation;
     private long mTimeInMilliseconds;
 
 
 
     /**Constructor for the class
      * @param magnitude is the magnitude (size) of the earthquake
-     * @param city is the city location of the earthquake
+     * @param location is the city location of the earthquake
      * @param timeInMilliseconds is the time in milliseconds (from the Epoch) when the
      *  earthquake happened
      */
 
 
-    public Quake(String magnitude, String city, long timeInMilliseconds) {
+    public Quake(String magnitude, String location, long timeInMilliseconds) {
         mMagnitude = magnitude;
-        mCity = city;
+        mLocation = location;
         mTimeInMilliseconds = timeInMilliseconds;
 
     }
@@ -37,8 +37,8 @@ import java.lang.reflect.Constructor;
         return mMagnitude;
     }
 
-    public String getCity() {
-        return mCity;
+    public String getLocation() {
+        return mLocation;
     }
 
     public long getTimeInMilliseconds() {
